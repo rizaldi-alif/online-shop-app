@@ -7,10 +7,11 @@ export default function ButtonWithIcon({
   padding = "px-3 py-2",
   align = "middle",
   borderHoverColor = "gray-400",
+  textColor = ''
 }) {
   return (
     <button
-      className={`text-${textAlign} text-${textSize} rounded-${rounded} ${border} ${padding} w-full align-${align} hover:border-${borderHoverColor} transition-all duration-150`}
+      className={`rounded-${rounded} ${border} ${padding} w-full align-${align} hover:border-${borderHoverColor} transition-all duration-150 flex flex-col items-center justify-center gap-px ${textColor}`}
     >
       {children}
     </button>

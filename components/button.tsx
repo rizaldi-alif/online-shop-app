@@ -7,10 +7,15 @@ export default function Button({
   textAlign = "center",
   textSize = "sm",
   padding = "p-2",
+  border = "",
+  borderColor = "",
+  hoverBorderColor = "",
+  hoverTextColor = "",
 }) {
   return (
     <button
-      className={`text-${textSize} text-${textAlign} ${padding} rounded-${rounded} bg-${bg} text-${textColor} hover:bg-${bgHover} transition-all duration-150`}
+      className={`text-${textSize} text-${textAlign} ${padding} rounded-${rounded} bg-${bg} text-${textColor}  transition-all duration-150 ${border} ${borderColor}
+      hover:${hoverTextColor} hover:${hoverBorderColor} hover:bg-${bgHover}`}
     >
       {title}
     </button>
