@@ -2,12 +2,15 @@
 import Link from "next/link";
 import GoogleIcon from "@mui/icons-material/Google";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
+import ButtonWithIcon from "@/components/buttonWithIcon";
 
 export default function Register() {
   return (
     <main className="py-16">
       <div className="border rounded-2xl p-4 flex flex-col w-72 max-w-xs mx-auto sm:w-80">
-        <h2 className="text-center text-xl font-semibold">Daftar Akun</h2>
+        <h2 className="text-center text-xl font-semibold">
+          Daftar Online Shop
+        </h2>
         <section className="flex flex-col mt-4 space-y-2" id="input-section">
           <section className="flex gap-2">
             <input
@@ -59,13 +62,12 @@ export default function Register() {
         </section>
         <hr className="my-3 w-1/2 mx-auto" />
         <section id="other-section" className="space-y-2">
-          <button className="text-left text-sm rounded-md border py-2 px-3 w-full align-middle hover:border-gray-400 transition-all duration-150">
-            <GoogleIcon className="text-black" /> Daftar dengan Google
-          </button>
-          <button className="text-left text-sm rounded-md border py-2 px-3 w-full align-middle hover:border-gray-400 transition-all duration-150">
-            <FacebookRoundedIcon className="text-black" /> Daftar dengan
-            Facebook
-          </button>
+          <ButtonWithIcon flex={false}>
+            <GoogleIcon /> Daftar dengan Google{" "}
+          </ButtonWithIcon>
+          <ButtonWithIcon flex={false}>
+            <FacebookRoundedIcon /> Daftar dengan Facebook
+          </ButtonWithIcon>
         </section>
         <section className="flex flex-col text-sm mt-3" id="link-section">
           <span>

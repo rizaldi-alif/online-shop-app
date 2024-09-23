@@ -16,6 +16,15 @@ const config: Config = {
         xs: "320px",
         sm: "425px",
         md: "768px",
+        xl: "1280px",
+        "2xl": "1440px",
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          lg: "2.5rem",
+        },
       },
     },
   },

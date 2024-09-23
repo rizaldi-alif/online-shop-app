@@ -9,13 +9,11 @@ export default function Button({
   padding = "p-2",
   border = "",
   borderColor = "",
-  hoverBorderColor = "",
-  hoverTextColor = "",
+  classname = "",
 }) {
   return (
     <button
-      className={`text-${textSize} text-${textAlign} ${padding} rounded-${rounded} bg-${bg} text-${textColor}  transition-all duration-150 ${border} ${borderColor}
-      hover:${hoverTextColor} hover:${hoverBorderColor} hover:bg-${bgHover}`}
+      className={`text-${textSize} text-${textAlign} ${padding} rounded-${rounded} bg-${bg} text-${textColor}  transition-all duration-150 ${border} ${borderColor} hover:bg-${bgHover} ${classname}`}
     >
       {title}
     </button>

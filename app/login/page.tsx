@@ -9,7 +9,7 @@ export default function Login() {
   return (
     <main className="py-16">
       <div className="border border-gray-200 rounded-2xl p-4 flex flex-col w-72 max-w-xs mx-auto sm:w-80">
-        <h2 className="text-center text-xl font-semibold">Masuk</h2>
+        <h2 className="text-center text-xl font-semibold">Masuk Online Shop</h2>
         <section className="flex flex-col mt-4 space-y-2" id="input-section">
           <input
             type="email"
